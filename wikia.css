@@ -1,0 +1,475 @@
+/* Forum formatting -Algorithm & -Splaka */
+table.wikitable,
+table.prettytable {
+	margin: 1em 1em 1em 0;
+    background: #f9f9f9; /* #f9f9f9 */
+	border: 1px #aaa solid;
+	border-collapse: collapse;
+}
+table.wikitable tbody,
+table.prettytable tbody {
+	background: #424141; /* #fff 標準wikipageのbackground colorは#474646 */
+}
+ 
+table.wikitable th, table.wikitable td,
+table.prettytable th, table.prettytable td {
+	border: 1px #aaa solid;
+	padding: 0.2em;
+}
+ 
+table.wikitable th,
+table.prettytable th {
+	background: #f2f2f2; /* #f2f2f2 見出しの背景色 */
+	text-align: center;
+}
+ 
+table.wikitable caption,
+table.prettytable caption {
+	margin-left: inherit;
+	margin-right: inherit;
+}
+
+/*** tabber ***/
+
+.tabbernav {
+    font-family: inherit !important;
+    font-weight: normal !important;
+    font-size: 15px !important;
+    border-bottom: 5px solid #0f2e59 !important;
+    /*** padding: 0.3em 0 !important; ***/
+    /*** 日本語入力時にpadding要素に隙間が出来るため0を指定 ***/
+    padding-bottom: 0px !important;
+}
+
+.tabbernav a {
+    padding: 0.3em 0.5em !important;
+    margin: 0 !important;
+    color: white !important;
+    border: none !important;
+    background: transparent !important;
+}
+
+.tabberactive a {
+    color: white !important;
+    background: #0f2e59 !important;
+}
+
+.tabbernav :not(.tabberactive) a:hover {
+    background: #888fa9 !important;
+}
+
+.tabbertab {
+    padding: 3px !important;
+    border: 0px solid #CCC !important;
+    border-top: 0 !important;
+}
+
+
+/***** mainpage left column *****/
+
+/*** class ***/
+.mainpage-left-wrapper {
+    margin: 0px auto;
+}
+
+.website-title {
+    margin: 0 0 20px 0;
+    padding: .1em;
+    border: none;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    text-shadow: 0 0 1px #edf8ff, 0 0 0.5px #edf8ff, 0 0 0px #edf8ff;
+}
+
+h2.website-title {
+    margin: 0;
+    padding: 0 20px;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: normal;
+    letter-spacing:0.05rem;
+    text-shadow: none;
+    border: none;
+
+}
+
+.mainpage-box {
+    margin: 15px auto;
+}
+
+.mainpage-box-notices {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 0;
+    text-align: center;
+}
+
+.notice {
+    margin: auto;
+    text-align: center;
+}
+
+p.notice {
+    text-align: center;
+    margin: 0;
+    padding: 5px 0 0 0;
+}
+
+table.notice {
+    border: none;
+    padding: 0 0 5px 0;
+}
+
+.notice1 {
+    width: calc(50% - 7px);
+    border: 1px solid #FFFFFF;
+    background-color:#353535;
+
+}
+
+.notice2 {
+    width: calc(50% - 7px);
+    border: 1px solid #FFFFFF;
+    background-color:#353535;
+}
+
+.mainpage-box-notices {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 0;
+    text-align: center;
+}
+
+.mainpage-box-slider {
+    flex-direction: column;
+    margin-top: 0;
+    text-align: center;
+}
+
+.slider {
+    margin: auto;
+}
+
+.mainpage-box-announce {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 0;
+    text-align: center;
+}
+
+.announces {
+    flex-direction: column;
+    width: auto;    
+    margin: auto;
+    padding: 10px;
+    border: 1px solid #FFFFFF;
+    background-color:#353535;
+}
+
+h2.announce {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+h3.announce {
+    font-size: 0.9rem;
+    font-weight: normal;
+}
+
+.main-box-articles {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 0;
+    text-align: center;
+}
+
+.articles {
+    margin: 5px;
+}
+
+
+h2.articles-header {
+    padding: 3px;
+    background-color:#353535;
+    border:1px solid #FFFFFF;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.4em;
+    letter-spacing:0.1em;
+}
+
+.articles-list {
+    align-items: left;
+}
+
+h3.articles {
+    font-size: 0.9rem;
+    font-weight: normal;
+}
+
+h4.articles {
+    font-size: 0.8rem;
+    font-weight: normal;
+}
+.article-table {
+    border-radius: 7px;
+    
+}
+
+.main-box-basicinfo {
+    width: calc(50% - 10px);
+}
+
+.main-box-system {
+    width: calc(50% - 10px);
+}
+
+.main-box-community {
+    width: calc(50% - 10px);
+}
+
+.main-box-data {
+    width: calc(50% - 10px);
+}
+
+.main-box-reading {
+    width: calc(50% - 10px);
+}
+
+.main-box-help {
+    width: calc(50% - 10px);
+}
+
+.contents-table {
+    padding: 14px;
+    margin-bottom:14px;
+    width:auto;
+    border-radius: 20px;
+}
+
+.contents-table-in {
+    padding: 1px; 
+    margin-bottom:12px; 
+    width:100%; 
+    border-top-left-radius: 25px; 
+    border-bottom-left-radius: 25px;
+    box-shadow: 1px 1px 2px black;
+}
+
+.contents-table-in-title {
+    border-top-left-radius: 25px; 
+    border-bottom-left-radius: 25px; 
+    border:3px dotted #ffffff;
+}
+
+/* 古い設定 */
+
+.main-container {
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 0px 20px 0px;
+}
+
+.f-item {
+    flex: 1;
+    width: calc(50% - 10px);
+    margin: 5px;
+}
+
+.f-item-2 {
+    flex: 1;
+    width: calc(50% - 7px);
+    margin: 0 5px 5px 5px;
+    padding: 5px;
+    border: 1px solid #FFFFFF;
+}
+
+h3.main-container.f-item {
+    padding: 3px;
+    background-color: #353535;
+    border: 1px solid #FFFFFF;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.4em;
+    letter-spacing:0.1em;
+}
+
+ul.main-container.f-item {
+    align-items: center;
+}
+
+/***** CSS placed here will be applied to all skins on the entire site. *****/
+/* See also: [[MediaWiki:Monobook.css]] */
+/* <pre> */
+
+/* Mark redirects in Special:Allpages and Special:Watchlist */
+.allpagesredirect { font-style: italic; }
+.watchlistredir { font-style: italic; }
+
+/* Infobox template style */
+.infobox {
+   border: 1px solid #aaaaaa;
+   background-color: #f9f9f9;
+   color: black;
+   margin-bottom: 0.5em;
+   margin-left: 1em;
+   padding: 0.2em;
+   float: right;
+   clear: right;
+}
+.infobox td,
+.infobox th {
+   vertical-align: top;
+}
+.infobox caption {
+   font-size: larger;
+   margin-left: inherit;
+}
+.infobox.bordered {
+   border-collapse: collapse;
+}
+.infobox.bordered td,
+.infobox.bordered th {
+   border: 1px solid #aaaaaa;
+}
+.infobox.bordered .borderless td,
+.infobox.bordered .borderless th {
+   border: 0;
+}
+/* infobox Padding fixed by sted66 */
+.pi-europa .pi-item-spacing {
+    padding: 5px 14px;
+}
+
+/* infobox font-size 12 to 11 fixed by sted66 */
+.pi-europa .pi-data-value .pi-font {
+    font-size: 11px;
+}
+/* infobox marginfix */
+.pi-data-value dl {
+	margin 0;
+}
+.pi-data-value dd {
+	margin-bottom: 1px;
+	margin-left: 12px;
+}
+
+/* Giving headers and TOC a little extra space */
+h2 {margin-top: 20px;}
+
+.toc {margin-top: 20px;}
+
+/* Forum formatting (by -Algorithm & -Splaka) */
+.forumheader {
+     border: 1px solid #aaa;
+     background-color: #f9f9f9; margin-top: 1em; padding: 12px;
+}
+.forumlist td.forum_edited a {
+     color: black; text-decoration: none
+}
+.forumlist td.forum_title a {
+     padding-left: 20px;
+}
+.forumlist td.forum_title a.forum_new {
+     font-weight: bold; background: url(/images/4/4e/Forum_new.gif)
+     center left no-repeat; padding-left: 20px;
+}
+.forumlist td.forum_title a.forum_new:visited {
+     font-weight: normal; background: none; padding-left: 20px;
+}
+.forumlist th.forum_title {
+     padding-left: 20px;
+}
+
+/* Recent changes byte indicators */
+.mw-plusminus-pos { color: #006500; }
+.mw-plusminus-neg { color: #8B0000; }
+
+/* === Babel === */
+
+div.babelbox {
+   float: right;
+   margin-left: 1em;
+   margin-bottom: 0.5em;
+   width: 246px;
+   border: 1px solid #99B3FF;
+   padding: 2px 0 2px 0;
+}
+.lang-blockN, .lang-block0, .lang-block1, .lang-block2, .lang-block3 {
+   margin: 2px 4px 2px 4px; /* t, l, b, r */
+   width:238px;
+   border-collapse: collapse;
+}
+td.lang-codeN, td.lang-code0, td.lang-code1, td.lang-code2, td.lang-code3 {
+   text-align:center;
+   font-size:14pt;
+   width:45px;
+   height:45px;
+}
+td.lang-descriptionN, td.lang-description0, td.lang-description1,
+td.lang-description2, td.lang-description3 {
+  font-size:8pt;
+  padding:4pt;
+  line-height:1.25em
+}
+
+.lang-block0 {
+   border:1px solid #FFB3B3;
+}
+td.lang-code0 {
+  background-color: #FFB3B3;
+  color: black;
+}
+td.lang-description0 {
+  background-color: #FFE0E8;
+  color: black;
+}
+
+.lang-block1,  .lang-block2, .lang-block3  {
+   border:1px solid #99B3FF;
+}
+td.lang-code1, td.lang-code2, td.lang-code3 {
+  background-color: #99B3FF;
+  color: black;
+}
+td.lang-description1,  td.lang-description2, td.lang-description3 {
+  background-color: #E0E8FF;
+  color: black;
+}
+
+.lang-blockN {
+   border:1px solid #6EF7A7;
+}
+td.lang-codeN {
+  background-color: #6EF7A7;
+  color: black;
+}
+td.lang-descriptionN {
+  background-color: #C5FCDC;
+  color: black;
+}
+
+/* font */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
+
+.notoSansJP {  
+    font-family: 'Noto Sans JP', sans-serif;
+}
